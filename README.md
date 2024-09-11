@@ -8,7 +8,6 @@ Setup and Installation
 Usage
 License
 Contact
-You can view the live demo of my portfolio here: Link to your live portfolio
 
 Features
 Responsive Design: Adapts to different screen sizes for an optimal viewing experience on all devices.
