@@ -116,3 +116,25 @@ navigationLinks.forEach((link) => {
     });
   });
 });
+// Dynamic Background Switcher
+const imageBaseUrl = "https://source.unsplash.com/1600x900/?gradient"; // Random image URL from Unsplash
+let index = 0;
+
+setInterval(() => {
+  // Fetch random background image from Unsplash
+  const bgImageUrl = `${imageBaseUrl}&random=${Math.random()}`;
+  document.body.style.backgroundImage = `url(${bgImageUrl})`;
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundPosition = "center";
+  document.body.style.backgroundAttachment = "fixed";
+  index = (index + 1) % colors.length;
+}, 10000);
+
+// Navigate to Main Content
+function navigateToMain() {
+  document.querySelector("main").scrollIntoView({
+    behavior: "smooth",    // smooth scrolling
+    block: "center",       // center the element vertically
+    inline: "center"       // center the element horizontally
+  });
+}

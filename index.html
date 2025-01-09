@@ -5,10 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Welcome to the personal portfolio of Nandhan K, a Web Developer & Data Analyst with expertise in HTML, CSS, JavaScript, PHP, and data visualization tools like Power BI.">
+  <title>Nandhan K - Portfolio</title>
+  <meta name="description" content="Portfolio of Nandhan K, a proficient Web Developer and Data Analyst showcasing projects, skills, and achievements.">
   <meta name="keywords" content="Nandhan K, Web Developer, Data Analyst, Portfolio, HTML, CSS, JavaScript, PHP, Power BI, Projects, Resume">
   <meta name="author" content="Nandhan K">
 
@@ -41,37 +39,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E7YHYWTFHX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-E7YHYWTFHX');
+</script>
 </head>
 
 <body>
+  <section class="landing-page">
+    <div class="landing-content">
+      <h1>Hi👋</h1>
+      <h1>I'm <strong>Nandhan</strong></h1>
+      <p> Web Developer & Data Analyst</p>
 
+      <button class="cta-btn" onclick="navigateToMain()">Let's Begin</button>
+    </div>
+    <div class="sidebar-info">
+      <figure class="">
+        <img src="./assets/images/Nandhan_K.png" alt="Nandhan K">
+      </figure>
+    </div>
+  </section>  
   <!--
     - #MAIN
   -->
 
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
-
+    
     <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-            <img src="./assets/images/Nandhan K.jpg" alt="Nandhan K">
-          </figure>
-          
-
-        <div class="info-content">
-          <h1 class="name" title="Nandhan K">Nandhan K</h1>
-
-          <p class="title">Web Developer & Data Analyst</p>
-        </div>
+      <span>Contact Details</span>
+      
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -213,17 +219,38 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">What Drives Me</h2>
         </header>
 
         <section class="about-text">
-          <p>
-            With an MCA degree and a passion for innovation, I specialize in bridging data analysis and web development to deliver impactful solutions. Proficient in C++, Java, HTML, CSS, and Power BI, I thrive on uncovering actionable insights and crafting seamless digital experiences that drive results.
-
-During my internship at OctaNet Services Pvt Ltd, I strengthened my expertise in web development, creating intuitive, user-centric applications using PHP and JavaScript. Collaborating on complex projects allowed me to refine my problem-solving skills and implement innovative solutions that exceeded expectations.
-
-Fueled by a growth mindset and an eagerness to learn, I continuously explore emerging technologies to stay ahead of the curve. Whether it’s designing responsive websites, optimizing workflows, or building compelling dashboards, I’m committed to delivering excellence and making a meaningful impact in every endeavor.
-          </p>
+          <ul>
+            <li><strong>🎓 MCA graduate</strong> with a passion for innovation, combining <strong>📊 data analysis</strong> and <strong>💻 web development</strong> to deliver impactful solutions.</li>
+            <li><strong>Proficient in</strong>:
+              <ul>
+                <li><strong>C++</strong> 💡</li>
+                <li><strong>Java</strong> 🔧</li>
+                <li><strong>HTML</strong> 🌐</li>
+                <li><strong>CSS</strong> 🎨</li>
+                <li><strong>Power BI</strong> 📊</li>
+              </ul>
+            </li>
+            <li><strong>🛠️ Internship at OctaNet Services Pvt Ltd</strong>: 
+              <ul>
+                <li>Gained hands-on experience in <strong>web development</strong>, building user-centric applications using <strong>PHP</strong> and <strong>JavaScript</strong>.</li>
+                <li>Collaborated on complex projects, refining <strong>problem-solving</strong> skills and delivering solutions that exceeded expectations.</li>
+              </ul>
+            </li>
+            <li>Always <strong>📚 learning</strong> and exploring emerging <strong>🚀 technologies</strong> to stay ahead of the curve.</li>
+            <li>Focused on creating:
+              <ul>
+                <li><strong>📱 Responsive websites</li>
+                <li><strong>⚙️ Optimizing workflows</li>
+                <li><strong>📊 Building compelling dashboards</li>
+              </ul>
+            </li>
+            <li>Committed to delivering <strong>💯 excellence</strong> and making a <strong>🌟 meaningful impact</strong> in every project!</li>
+          </ul>
+          
         </section>
 
 
